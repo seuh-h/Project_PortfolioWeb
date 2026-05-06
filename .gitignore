@@ -1,0 +1,16 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Editor
+.vscode/
+*.suo
+*.user
+
+# Claude Code (AI assistant config - not for repo)
+.claude/
+CLAUDE.md

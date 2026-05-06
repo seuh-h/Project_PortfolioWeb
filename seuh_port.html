@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한승희 | Portfolio</title>
+    <link rel="stylesheet" href="seuh_port.css">
+</head>
+<body>
+
+    <!-- Matrix background canvas -->
+    <canvas id="matrix-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <a href="#hero">홈</a>
+        <a href="#skills">스킬</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+        <div class="hero-slideshow"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">안녕하세요 :)</p>
+            <h1 class="hero-name">한승희</h1>
+            <p class="hero-typed">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-desc">제 노력의 과정과 결과가 담긴 포트폴리오입니다.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">기술 스택</h2>
+        <div class="skills-list">
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">HTML5</span>
+                    <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">CSS3</span>
+                    <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">jQuery</span>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 70%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">React</span>
+                    <span class="skill-percent">65%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 65%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">Next.js</span>
+                    <span class="skill-percent">55%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 55%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">Bootstrap</span>
+                    <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 70%"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-label">
+                    <span class="skill-name">MySQL</span>
+                    <span class="skill-percent">55%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="--skill: 55%"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">프로젝트</h2>
+        <div class="projects-grid">
+
+            <a href="#proj-1" class="project-card">
+                <span class="card-tag"></span>
+                <h3 class="card-title"></h3>
+                <p class="card-preview"></p>
+                <span class="card-more">자세히 보기 →</span>
+            </a>
+
+            <a href="#proj-2" class="project-card">
+                <span class="card-tag"></span>
+                <h3 class="card-title"></h3>
+                <p class="card-preview"></p>
+                <span class="card-more">자세히 보기 →</span>
+            </a>
+
+            <a href="#proj-3" class="project-card">
+                <span class="card-tag"></span>
+                <h3 class="card-title"></h3>
+                <p class="card-preview"></p>
+                <span class="card-more">자세히 보기 →</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Project Overlays (CSS :target으로 열고 닫음) -->
+    <div id="proj-1" class="project-overlay">
+        <div class="overlay-inner">
+            <a href="#projects" class="overlay-close">✕</a>
+            <h3 class="overlay-title"></h3>
+            <div class="overlay-tags">
+                <span class="overlay-tag"></span>
+            </div>
+            <p class="overlay-desc"></p>
+            <ul class="overlay-list">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="proj-2" class="project-overlay">
+        <div class="overlay-inner">
+            <a href="#projects" class="overlay-close">✕</a>
+            <h3 class="overlay-title"></h3>
+            <div class="overlay-tags">
+                <span class="overlay-tag"></span>
+            </div>
+            <p class="overlay-desc"></p>
+            <ul class="overlay-list">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="proj-3" class="project-overlay">
+        <div class="overlay-inner">
+            <a href="#projects" class="overlay-close">✕</a>
+            <h3 class="overlay-title"></h3>
+            <div class="overlay-tags">
+                <span class="overlay-tag"></span>
+            </div>
+            <p class="overlay-desc"></p>
+            <ul class="overlay-list">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">문의</h2>
+        <div class="contact-content">
+            <p class="contact-row">
+                <span class="contact-label">Email</span>
+                <a href="mailto:stu4704@gmail.com" class="contact-link">stu4704@gmail.com</a>
+            </p>
+        </div>
+
+        <form class="contact-form" action="mailto:stu4704@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label class="form-label" for="name">이름</label>
+                <input class="form-input" type="text" id="name" name="이름" placeholder="이름을 입력해주세요" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="email">이메일</label>
+                <input class="form-input" type="email" id="email" name="이메일" placeholder="답장받을 이메일을 입력해주세요" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="message">메시지</label>
+                <textarea class="form-textarea" id="message" name="메시지" placeholder="전하고 싶은 내용을 입력해주세요" rows="5" required></textarea>
+            </div>
+            <button class="form-submit" type="submit">보내기</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 한승희. Portfolio by Seunghee Han.</p>
+    </footer>
+
+    <script src="matrix.js"></script>
+    <script src="typing.js"></script>
+    <script src="skills.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+</html>

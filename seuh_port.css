@@ -415,6 +415,21 @@ body {
     margin-bottom: 0.35rem;
 }
 
+.overlay-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    color: var(--accent);
+    font-size: 0.88rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.overlay-link:hover {
+    border-color: var(--accent);
+}
+
 /* ===== Contact ===== */
 .contact-content {
     display: flex;
